@@ -1,0 +1,143 @@
+/* TRANSFORMATIONS */
+
+h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-top: 100px;
+
+}
+
+p{
+    color: white;
+    text-align: center; 
+
+}
+
+
+/* BASE STYLES
+------------------------------------- */
+body {
+    margin: 0;
+    padding: 0.5em;
+    /*background-color: rgb(15, 53, 15);*/
+    background-image: linear-gradient(rgb(39, 117, 39), rgb(173, 173, 49), orange, rgb(185, 48, 43)) ;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HOME PAGE
+------------------------------------- */
+main {
+
+    background-image: url(images/leaf-skeleton.png);
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode:soft-light;
+    margin-bottom: 1000px;
+}
+
+.leaf-1{
+    width: 25%;
+    opacity: 75%; 
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.leaf-2{
+    width: 25vw;
+    position: absolute;
+    filter: blur(1px);
+    bottom: 0%;
+    /*z-index: -1;*/
+    transform: translateY(15vw) rotate(-45deg) skewY(-45deg);
+
+}
+
+.leaf-3{    
+    width: 25vw;
+    position: absolute;
+    opacity: 50%;
+    transform: translateX(25vw) rotate(-45deg) skewX(15deg);
+
+}
+
+
+
+
+/* NAVIGATION
+------------------------------------- */
+nav {
+    background: rgb(153, 192, 159);
+    position: fixed;
+    font-weight: 500;
+    /*text-transform: uppercase;*/
+    width: 100vw;
+    height: 3em;
+    top: 5px;
+    left: 0%;
+    padding: 13px;
+
+}
+
+nav a {
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: rgb(129, 64, 129);
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
+
+/* GALLERY PAGE
+------------------------------------- */
+
+* {
+    box-sizing: border-box;
+  }
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+    max-width: 50em;
+    margin: 5em auto;
+    padding: 8px;
+    border: 8px solid green;
+}
+
+.gallery-item {
+    padding: 0.5em;
+    border: 2px solid black;
+    display: grid;
+    align-items: end;
+    background: white;
+    max-height: 60em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.item1{
+    grid-column: 1 / -1;
+    max-height: 50vw; 
+}
+
+.item4{
+    grid-column: 1 / -1; 
+}
+ 
+
+
+
+
